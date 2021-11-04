@@ -23,12 +23,20 @@ function App() {
       setMode('dark');
       document.body.style.backgroundColor = '#343a40';
       showAlert("Dark mode has been enabled", "success");
+      document.title = "PlayWithText - Dark Mode";
+      setTimeout(()=> {
+        document.title = "PlaywithText is Amazing";
+      },3000);
+      setTimeout(()=> {
+        document.title = "Install it now";
+      },1500);
     }
     else
     {      
       setMode('light');
       document.body.style.backgroundColor = 'white';
       showAlert("Light mode has been enabled", "success");
+      document.title = "PlayWithText - Light Mode";
     }
   }
   return (
