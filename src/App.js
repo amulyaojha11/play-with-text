@@ -1,15 +1,15 @@
 import './App.css';
-import About from './components/About';
+// import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import React, { useState } from 'react'
 import Alert from './components/Alert';
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Route,
+//   Routes,
+//   Link
+// } from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState('light');
@@ -29,7 +29,7 @@ function App() {
       setMode('dark');
       document.body.style.backgroundColor = '#343a40';
       showAlert("Dark mode has been enabled", "success");
-      document.title = "PlayWithText - Dark Mode";
+      // document.title = "PlayWithText - Dark Mode";
       // setTimeout(()=> {
       //   document.title = "PlaywithText is Amazing";
       // },3000);
@@ -42,27 +42,27 @@ function App() {
       setMode('light');
       document.body.style.backgroundColor = 'white';
       showAlert("Light mode has been enabled", "success");
-      document.title = "PlayWithText - Light Mode";
+      // document.title = "PlayWithText - Light Mode";
     }
   }
   return (
     <>
-      <Router>
+      {/* <Router> */}
       <Navbar title="PlayWithText" about="About" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert}/>
-      {/* <div className="container my-3">
-        <TextForm heading="Enter the text to analyze below" showAlert={showAlert} mode={mode} />
-      </div> */}
-      <Routes>
+      <div className="container my-3">
+        <TextForm heading="Try PlayWithText - word counter, character counter, remove extra spaces" showAlert={showAlert} mode={mode} />
+      </div>
+      {/* <Routes> */}
         {/* /users --> Component 1
         /users/home --> Component 2 */}
-          <Route path="about" element={<About />}>
-          </Route>
-          <Route path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/>}>
-          </Route>
+          {/* <Route path="about" element={<About />}> */}
+          {/* </Route> */}
+          {/* <Route path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/>}> */}
+          {/* </Route> */}
         {/* <About/> */}
-      </Routes>
-      </Router>
+      {/* </Routes> */}
+      {/* </Router> */}
     </>
   );
 }
