@@ -1,8 +1,10 @@
-# Current Progress
+# PlayWithText
+PlayWithText is a free character counter tool that provides instant character count & word count statistics for a given text. PlayWithText reports the number of words and characters. Thus it is suitable for writing text with word/ character limit.
 
-Working on the project as of now.
+## Browser Compatibilities
+This word counter software works in any web browsers such as Chrome, Firefox, Internet Explorer, Safari, Opera. It suits to count characters in facebook, blog, books, excel document, pdf document, essays.
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
